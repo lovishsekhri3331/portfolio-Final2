@@ -122,3 +122,7 @@
     font-family: var(--font-mono);
     height: auto;
 }
+.Aboutscreen-name{
+    font-family: var(--font-roboto);
+    color: var(--white);
+}
