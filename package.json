@@ -1,0 +1,18 @@
+{
+  "name": "portfolio-final",
+  "version": "1.0.0",
+  "description": "portfolio Final",
+  "main": "main.js",
+  "scripts": {
+    "lite": "lite-server",
+    "start": "npm run lite"
+  },
+  "author": "Lovish Sekhri",
+  "license": "ISC",
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  },
+  "dependencies": {}
+  
+
+}

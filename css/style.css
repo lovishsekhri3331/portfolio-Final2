@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --dark-navy: #020c1b;
+    --navy: #0a192f;
+    --light-navy: #112240;
+    --lightest-navy: #233554;
+    --navy-shadow: rgba(2,12,27,0.7);
+    --slate: #8892b0;
+    --light-slate: #a8b2d1;
+    --lightest-slate: #ccd6f6;
+    --white: #e6f1ff;
+    --green: #64ffda;
+    --green-tint: rgba(100,255,218,0.1);
+    --font-mono: 'Roboto Mono', monospace;
+    --font-roboto: 'Roboto', sans-serif;
+    
+    --top-distance:380px;
+}
+.nav-links{
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 1.5rem;
+}
+.nav-links li a{
+    color: var(--white);
+}
+.nav-links li a, .resume-button button{
+    margin-left: 10px;
+    font-family:var(--font-mono) ;
+    -webkit-font-smoothing: antialiased;
+}
+.logo h4{
+    margin: 0;
+}
+.sidenav{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    background-color: var(--light-navy);
+}
+.sidenav a{
+    color: var(--white);
+}
+
+.sidenav-trigger .material-icons{
+    font-size: 2.3rem;
+}
+.logo-img{
+    width: 65px;
+    margin-left: 20px;
+}
+
+
+
+.fixed-action-btn > .btn-floating > .material-icons {
+    transition: transform 0.3s;
+}
+
+.fixed-action-btn.active > .btn-floating > .material-icons {
+    transform: rotate(135deg);
+}
+.btn-floating{
+    border: none;
+    background-color: var(--lightest-navy);
+}
+.home{
+    height: 100%;
+}
+@media only screen and (min-width: 380px){
+    .homescreen-p{
+        margin-top: 10rem;
+        font-family: var(--font-mono);
+        color: var(--green);
+        font-size: 15px;
+    }
+}
+@media only screen and (max-width: 379px){
+    .homescreen-p{
+        margin-top: 5rem;
+        font-family: var(--font-mono);
+        color: var(--green);
+        font-size: 15px;
+    }
+}
+.homescreen-name{
+    font-family: var(--font-roboto);
+    color: var(--white);
+    font-size: 15px;
+    margin: 2.3733333333rem 0 1.424rem 0;
+}
+.homescreen-helpertext{
+    font-family: var(--font-roboto);
+    color: var(--slate);
+    font-size: 15px;
+}
+.homescreen-helpertext2{
+    font-family: var(--font-roboto);
+    color: var(--slate);
+    font-size: 15px;
+    -webkit-font-smoothing: antialiased;
+}
+.homescreen-button .btn{
+    margin-top: 2rem;
+    font-family: var(--font-mono);
+    height: auto;
+}
