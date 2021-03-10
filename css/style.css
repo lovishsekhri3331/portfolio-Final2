@@ -140,3 +140,10 @@ hr{
 .about .about2 li{
     list-style: circle;
 }
+.aboutRight{
+    height: 320px;
+    background-image: url(../img/IMG_2465.jpeg);
+    background-size:cover;
+    border-radius: 2px;
+    
+}
