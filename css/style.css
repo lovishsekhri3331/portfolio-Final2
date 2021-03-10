@@ -94,7 +94,7 @@
 }
 @media only screen and (max-width: 379px){
     .homescreen-p{
-        margin-top: 5rem;
+        margin-top: 9rem;
         font-family: var(--font-mono);
         color: var(--green);
         font-size: 15px;
@@ -111,11 +111,14 @@
     color: var(--slate);
     font-size: 15px;
 }
-.homescreen-helpertext2{
+.homescreen-helpertext2 , .aboutscreen-helpertext2{
     font-family: var(--font-roboto);
     color: var(--slate);
-    font-size: 15px;
+    font-size: 17px;
     -webkit-font-smoothing: antialiased;
+}
+.aboutscreen-helpertext2{
+    font-size: 2vh;
 }
 .homescreen-button .btn{
     margin-top: 2rem;
@@ -125,4 +128,15 @@
 .Aboutscreen-name{
     font-family: var(--font-roboto);
     color: var(--white);
+
+}
+hr{
+    margin-top: 16px;
+    border-top: 0.1px var(--light-navy);
+}
+.about span{
+    color: var(--green);
+}
+.about .about2 li{
+    list-style: circle;
 }
