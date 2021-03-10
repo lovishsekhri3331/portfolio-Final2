@@ -12,7 +12,10 @@
   "devDependencies": {
     "lite-server": "^2.6.1"
   },
-  "dependencies": {}
-  
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lovishsekhri3331/portfolio-Final"
+  }
 
 }
