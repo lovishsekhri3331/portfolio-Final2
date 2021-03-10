@@ -20,6 +20,18 @@
     
     --top-distance:380px;
 }
+#navbar {
+    position: fixed;
+    top: 0%;
+    padding-left:  10px;
+    background-color:rgba(10, 25, 47, 0.85);
+    backdrop-filter: blur(8px);
+    z-index: 11;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 10px 30px -10px var(--navy-shadow);
+    transition: top 0.3s;
+}
+
 .nav-links{
     display: flex;
     justify-content: flex-end;
@@ -68,12 +80,13 @@
     border: none;
     background-color: var(--lightest-navy);
 }
-.home{
-    height: 100%;
+
+.home,.about{
+    height: 85vh
 }
 @media only screen and (min-width: 380px){
     .homescreen-p{
-        margin-top: 10rem;
+        margin-top: 11rem;
         font-family: var(--font-mono);
         color: var(--green);
         font-size: 15px;

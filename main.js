@@ -4,8 +4,22 @@ document.addEventListener('DOMContentLoaded', function() {
     var elems = document.querySelectorAll('.sidenav');
     var instances = M.Sidenav.init(elems, {edge:'right'});
 });
-//Side bar functionality triggerer
 
+/// nav bar appears when scorlled upwards
+var prevScrollpos = window.pageYOffset;
+    window.onscroll = function() {
+        var currentScrollPos = window.pageYOffset;
+        if (prevScrollpos > currentScrollPos) {
+            document.getElementById("navbar").style.top = "0";
+        } else {
+            document.getElementById("navbar").style.top = "-70px";
+        }
+        prevScrollpos = currentScrollPos;
+}
+
+
+
+//Side bar functionality triggerer
 $(document).ready(function(){
     $('.sidenav').sidenav();
 });
