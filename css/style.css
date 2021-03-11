@@ -95,23 +95,31 @@
 }
 
 .home,.about,.experience{
-    height: 85vh
+    height: 77vh
 }
-@media only screen and (min-width: 380px){
+@media only screen and (min-width: 768px){
     .homescreen-p{
         margin-top: 11rem;
-        font-family: var(--font-mono);
-        color: var(--green);
-        font-size: 15px;
+    }
+}
+@media only screen and  (min-width:380px) and (max-width:768px)
+{
+    .homescreen-p{
+        margin-top: 11rem;
+        padding-top: 8rem;
+        margin-bottom:2rem;
     }
 }
 @media only screen and (max-width: 379px){
     .homescreen-p{
         margin-top: 9rem;
-        font-family: var(--font-mono);
-        color: var(--green);
-        font-size: 15px;
-    }
+}
+}
+
+.homescreen-p{
+    font-family: var(--font-mono);
+    color: var(--green);
+    font-size: 15px;
 }
 .homescreen-name{
     font-family: var(--font-roboto);
@@ -174,7 +182,3 @@ hr{
     opacity: 0;
     transition: opacity 500ms ease 0s;
 }
-/* .reveal-ele{
-    opacity: 0;
-    margin-top: 25px;
-} */

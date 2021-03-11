@@ -53,12 +53,12 @@ var navOffset = $("nav").innerHeight() + 10;
 
 $(window).scroll(function(){
     
-    var contentPosTop = $(window).scrollTop() + navOffset + 10;
+    var contentPosTop = $(window).scrollTop() + navOffset + 60;
     
     
     // reveal the content AS you scroll
     $(".reveal-ele").each(function(){
-        var botEle =$(this).offset().top + $(this).innerHeight();
+        var botEle =$(this).offset().top + $(this).innerHeight()-20;
         var botWin = contentPosTop + $(window).height();
         
         if(botEle<botWin) {
