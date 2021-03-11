@@ -47,33 +47,36 @@ var prevScrollpos = window.pageYOffset;
 ///////////
 // determines the height of nav bar plus buffer
 var navOffset = $("nav").innerHeight() + 10;
+    $("nav a[href^='#']").click(function (e) {
 
+        // prevents browser from doing a default click
+        // finds the position of selected link/ID
+        var idPos = $($(this).attr("href")).offset().top - navOffset;
 
+        // animates to selected section position
+        $("body, html").animate({scrollTop: idPos}, 500, "linear");
 
-
-$(window).scroll(function(){
-    
-    var contentPosTop = $(window).scrollTop() + navOffset + 60;
-    
-    
-    // reveal the content AS you scroll
-    $(".reveal-ele").each(function(){
-        var botEle =$(this).offset().top + $(this).innerHeight()-20;
-        var botWin = contentPosTop + $(window).height();
-        
-        if(botEle<botWin) {
-            $(this).animate({
-                
-                opacity:1,
-                marginTop:0
-                
-            },1000,"easeOutSine");
-            
-        }
-        
-        
     });
-    
-    
-});
-    
+    //animate the the window while performing scroll based animation
+    $(window).scroll(function(){
+        
+        var contentPosTop = $(window).scrollTop() + navOffset;
+        
+        
+        // reveal the content AS you scroll
+        $(".reveal-ele").each(function(){
+            var botEle =$(this).offset().top + $(this).innerHeight()-30;
+            var botWin = contentPosTop + $(window).height() + 250;
+
+            
+            
+            if(botEle<botWin) {
+                $(this).animate({
+                    
+                    opacity:1,
+                    marginTop:0
+                    
+                },1000,"easeOutSine");
+            }
+        });
+    });

@@ -11,13 +11,13 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap" rel="stylesheet">
-    <style>
+    <!-- <style>
         .reveal-ele{
             opacity: 0;
             margin-top: 10px;
         }
         /* Very Important class that allows the elements to animate on the screen */
-    </style>
+    </style> -->
     
     <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
     <script src="./vendor/gsap.min.js"></script>
@@ -30,9 +30,9 @@
             <div class="logo left">
                 <img src="./img/Logo.png" class="responsive-img logo-img reveal">
             </div>
-        <a href="" data-target="slide-out" class="sidenav-trigger hide-on-med-and-up right reveal"><i class="material-icons large">menu</i></a>
+        <a href="" data-target="slide-out" class="sidenav-trigger hide-on-large right reveal"><i class="material-icons large">menu</i></a>
 
-            <ul class="nav-links right hide-on-small-only">
+            <ul class="nav-links right hide-on-med-and-down">
                 <li><a href="#about" class="navlinks-underline reveal">About</a></li>
                 <li><a href="#experience" class="navlinks-underline reveal">Experience</a></li>
                 <li><a href="" class="navlinks-underline reveal">Works</a></li>
@@ -43,11 +43,11 @@
     </nav>
     
     <!-- Right navigation code -->
-    <div class="right-hamburger-list">
-        <ul id="slide-out" class="sidenav hide-on-med-and-up">
+    <div class="right-hamburger-list">as
+        <ul id="slide-out" class="sidenav hide-on-large">
             <li><a href="#about">About</a></li>
             <li><a href="#experience">Experience</a></li>
-            <li><a href="#works">Works</a></li>
+            <li><a href="#work">Works</a></li>
             <li><a href="#contact">Contact</a></li>
             <li class ="resume-button"><button class="btn" type="" name="action">Resume</button></li>
         </ul>
@@ -130,11 +130,26 @@
 
         <section class="experience reveal-ele" id="experience">
             <div class="row">
-                <div class="aboutLeft col l8 m11 s11 push-s1 ">
-                    <div class="Aboutscreen-name row ">
-                        <h4 class="col m6 push-m2">Where I've Worked</h2><hr class="about-hr col m4 push-m1 hide-on-small-only">
+                <div class="Aboutscreen-name  experience-name">
+                    <h4 class="col m6 push-m2">Where I've Worked</h2><hr class="about-hr col m4 push-m1 hide-on-small-only">
+                </div>
+            </div>
+            <div class="row">
+                <div class="experience-Tabs">
+                    <div class="row">
+                        <div class="col s12">
+                            <ul class="tabs">
+                                <li class="tab col s3"><a href="#test1">Test 1</a></li>
+                                <li class="tab col s3"><a class="active" href="#test2">Test 2</a></li>
+                                <li class="tab col s3"><a href="#test3">Test 3</a></li>
+                                <li class="tab col s3"><a href="#test4">Test 4</a></li>
+                            </ul>
+                        </div>
+                        <div id="test1" class="col s12">Test 1</div>
+                        <div id="test2" class="col s12">Test 2</div>
+                        <div id="test3" class="col s12">Test 3</div>
+                        <div id="test4" class="col s12">Test 4</div>
                     </div>
-                    
                 </div>
             </div>
         </section>
@@ -143,6 +158,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <script src="main.js"></script>
+    <!-- <script src="main.js"></script> -->
 </body>
 </html>

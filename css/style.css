@@ -49,12 +49,15 @@
 .navlinks-underline::after{
     content: "";
     display: block;
+    opacity: 0;
     width: 0;
     height: 2px;
     background: var(--green);
-    transition: width .3s;
+    transition: width .5s;
 }
 .navlinks-underline:hover::after{
+    display: block;
+    opacity: 1;
     width: 100%;
     transition: width .3s;
 }
@@ -94,8 +97,11 @@
     background-color: var(--lightest-navy);
 }
 
-.home,.about,.experience{
-    height: 77vh
+.home, .experience{
+    height: 78vh;
+}
+.about{
+    height: 100vh;
 }
 @media only screen and (min-width: 768px){
     .homescreen-p{
@@ -146,10 +152,9 @@
     font-family: var(--font-mono);
     height: auto;
 }
-.Aboutscreen-name{
+.Aboutscreen-name, .experience-name{
     font-family: var(--font-roboto);
     color: var(--white);
-
 }
 hr{
     margin-top: 16px;
