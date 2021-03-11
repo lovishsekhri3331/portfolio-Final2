@@ -47,18 +47,7 @@ var prevScrollpos = window.pageYOffset;
 ///////////
 // determines the height of nav bar plus buffer
 var navOffset = $("nav").innerHeight() + 10;
-$("nav a[href^='#']").click(function (e) {
 
-    // prevents browser from doing a default click
-    e.preventDefault();
-
-    // finds the position of selected link/ID
-    var idPos = $($(this).attr("href")).offset().top - navOffset;
-
-    // animates to selected section position
-    $("body, html").animate({scrollTop: idPos}, 1000, "easeInOutQuad");
-
-});
 
 
 
