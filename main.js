@@ -5,20 +5,6 @@ document.addEventListener('DOMContentLoaded', function() {
     var instances = M.Sidenav.init(elems, {edge:'right'});
 });
 
-/// nav bar appears when scorlled upwards
-var prevScrollpos = window.pageYOffset;
-    window.onscroll = function() {
-        var currentScrollPos = window.pageYOffset;
-        if (prevScrollpos > currentScrollPos) {
-            document.getElementById("navbar").style.top = "0";
-        } else {
-            document.getElementById("navbar").style.top = "-70px";
-        }
-        prevScrollpos = currentScrollPos;
-}
-
-
-
 //Side bar functionality triggerer
 $(document).ready(function(){
     $('.sidenav').sidenav();
@@ -33,7 +19,7 @@ $(document).ready(function(){
 
 
 ///loops through the items and make them animate on the screen 
-$(" .reveal").each(function(i) {
+$("nav .reveal, .home .reveal").each(function(i) {
 
     gsap.from(this, {
         delay: 1.45 + i * 0.15,
@@ -44,3 +30,61 @@ $(" .reveal").each(function(i) {
     });
 
 });
+/// nav bar appears when scorlled upwards
+var prevScrollpos = window.pageYOffset;
+    window.onscroll = function() {
+        var currentScrollPos = window.pageYOffset;
+        if (prevScrollpos > currentScrollPos) {
+            document.getElementById("navbar").style.top = "0";
+        } else {
+            document.getElementById("navbar").style.top = "-70px";
+        }
+        prevScrollpos = currentScrollPos;
+}
+
+
+//animation to reveal on scroll
+///////////
+// determines the height of nav bar plus buffer
+var navOffset = $("nav").innerHeight() + 10;
+$("nav a[href^='#']").click(function (e) {
+
+    // prevents browser from doing a default click
+    e.preventDefault();
+
+    // finds the position of selected link/ID
+    var idPos = $($(this).attr("href")).offset().top - navOffset;
+
+    // animates to selected section position
+    $("body, html").animate({scrollTop: idPos}, 1000, "easeInOutQuad");
+
+});
+
+
+
+$(window).scroll(function(){
+    
+    var contentPosTop = $(window).scrollTop() + navOffset + 10;
+    
+    
+    // reveal the content AS you scroll
+    $(".reveal-ele").each(function(){
+        var botEle =$(this).offset().top + $(this).innerHeight();
+        var botWin = contentPosTop + $(window).height();
+        
+        if(botEle<botWin) {
+            $(this).animate({
+                
+                opacity:1,
+                marginTop:0
+                
+            },1000,"easeOutSine");
+            
+        }
+        
+        
+    });
+    
+    
+});
+    
