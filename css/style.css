@@ -182,3 +182,7 @@ hr{
     opacity: 0;
     transition: opacity 500ms ease 0s;
 }
+.about-image{
+    display: flex;
+    justify-content: center;
+}
