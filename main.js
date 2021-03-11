@@ -5,10 +5,13 @@ document.addEventListener('DOMContentLoaded', function() {
     var instances = M.Sidenav.init(elems, {edge:'right'});
 });
 
-//Side bar functionality triggerer
-$(document).ready(function(){
-    $('.sidenav').sidenav();
-});
+  // Or with jQuery
+  $(document).ready(function(){
+    $('ul.tabs').tabs({
+      swipeable : true,
+      responsiveThreshold : 1920
+    });
+  });
 
 
 //functionality for the floating navbar
@@ -80,3 +83,5 @@ var navOffset = $("nav").innerHeight() + 10;
             }
         });
     });
+
+   
