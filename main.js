@@ -6,12 +6,12 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
   // Or with jQuery
-  $(document).ready(function(){
-    $('ul.tabs').tabs({
-      swipeable : true,
-      responsiveThreshold : 1920
+    $(document).ready(function(){
+        $('ul.tabs').tabs({
+        swipeable : true,
+        responsiveThreshold : 1920
+        });
     });
-  });
 
 
 //functionality for the floating navbar
@@ -54,7 +54,7 @@ var navOffset = $("nav").innerHeight() + 10;
 
         // prevents browser from doing a default click
         // finds the position of selected link/ID
-        var idPos = $($(this).attr("href")).offset().top - navOffset;
+        var idPos = $($(this).attr("href")).offset().top - navOffset - 110;
 
         // animates to selected section position
         $("body, html").animate({scrollTop: idPos}, 500, "linear");
@@ -83,5 +83,3 @@ var navOffset = $("nav").innerHeight() + 10;
             }
         });
     });
-
-   

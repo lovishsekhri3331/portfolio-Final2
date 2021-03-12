@@ -2620,7 +2620,6 @@ ul:not(.browser-default) > li {
 }
 
 a {
-  color: #039be5;
   text-decoration: none;
   -webkit-tap-highlight-color: transparent;
 }
@@ -5114,7 +5113,7 @@ small {
   position: absolute;
   bottom: 0;
   height: 2px;
-  background-color: #f6b2b5;
+  background-color:var(--green);
   will-change: left, right;
 }
 
