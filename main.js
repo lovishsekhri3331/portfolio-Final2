@@ -13,6 +13,14 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
+//gsap for appear floating button
+
+gsap.from(".fixed-action-btn",{
+    delay:3.5,
+    scale:0,
+    duration:0.7,
+    ease: "power2.out",
+})
 
 //functionality for the floating navbar
 
@@ -69,7 +77,7 @@ var navOffset = $("nav").innerHeight() + 10;
         // reveal the content AS you scroll
         $(".reveal-ele").each(function(){
             var botEle =$(this).offset().top + $(this).innerHeight()-30;
-            var botWin = contentPosTop + $(window).height() + 250;
+            var botWin = contentPosTop + $(window).height() + 300;
 
             
             
@@ -79,7 +87,7 @@ var navOffset = $("nav").innerHeight() + 10;
                     opacity:1,
                     marginTop:0
                     
-                },1000,"easeOutSine");
+                },1000,"linear");
             }
         });
     });
