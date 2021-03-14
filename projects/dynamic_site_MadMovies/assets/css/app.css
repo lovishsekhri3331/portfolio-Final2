@@ -1,0 +1,221 @@
+body {
+    background-color: #2f2f2f;
+}
+
+.card {
+    border: none;
+}
+
+.higher {
+    height: 8.0rem;
+}
+
+.slick-dots {
+    bottom: 0.5rem;
+}
+
+.slick-dots li button::before {
+    font-size: 12px;
+    color: white;
+    opacity: 1.0;
+}
+
+.slick-dots li.slick-active button::before {
+    color: yellow;
+    opacity: 1.0;
+}
+
+
+.slick-prev::before,
+.slick-next::before {
+    color: green;
+    opacity: 1.0;
+}
+
+.slick-prev {
+    left: 0.5rem;
+    z-index: 1000;
+}
+
+.slick-next {
+    right: 0.5rem;
+    z-index: 1000;
+}
+
+.header {
+    background-color: #cc4319;
+    height: 60px;
+    padding-top: 8px;
+}
+
+.logo {
+    height: 3.0rem;
+}
+
+.search {
+    background-color: rgb(200, 200, 200);
+    height: 3.0rem;
+    text-align: right;
+}
+
+.movie_title {
+    background-color: rgb(100, 100, 100);
+    height: 3.0rem;
+    color: white;
+}
+
+
+.movie_poster {
+    color: white;
+}
+
+.movie_poster img {
+    width: 100%;
+}
+
+.description {
+    background-color: rgb(220, 220, 220);
+}
+
+.description_detail {
+    background-color: rgb(200, 200, 200);
+
+}
+
+.trailer {
+    background-color: rgb(100, 100, 100);
+    height: 16.0rem;
+}
+
+
+.title {
+    background-color: rgb(150, 150, 150);
+    height: 2.0rem;
+}
+
+.cast {
+    background-color: rgb(50, 50, 50);
+    height: 12.0rem;
+    color: white;
+}
+
+.movie_image {
+    background-color: rgb(50, 50, 50);
+    height: 8.0rem;
+    color: white;
+}
+
+.related_movie {
+    background-color: rgb(50, 50, 50);
+    color: white;
+}
+
+.did_you_know {
+    background-color: rgb(200, 200, 200);
+}
+
+.social_icons {
+    text-align: center;
+    height: 4.0rem;
+}
+.pink {
+    background-color: pink;
+}
+
+.paleblue {
+    background-color: paleturquoise;
+}
+
+.red {
+    background-color: red;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.header_background {
+    background-color: red;
+}
+
+
+.callout {
+    border: none;
+}
+
+.hideAll {
+    display: none;
+}
+
+.splash {
+    display: block;
+}
+.spash .title{
+    text-align: center;
+    color:black;
+    margin-left: 200px;
+}
+
+h4 {
+    font-size: 150%;
+    color: green;
+}
+.search{
+    background: #cc4319;
+}
+
+.search_results {
+    width: 30.0rem;
+    /*height: 40.0rem;*/
+    background-color: red;
+    position: absolute;
+    margin-left: -15rem;
+    margin-top: -1.0rem;
+    z-index: 1000;
+    text-align: left;
+}
+
+.search_results img {
+    width: 3.0rem;
+}
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 0 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+
+@media (max-width: 40em) {
+
+    h4 {
+        font-size: 170%;
+        color: white;
+    }
+
+}

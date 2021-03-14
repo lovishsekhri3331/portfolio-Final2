@@ -1,0 +1,611 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+
+    <!-- meta tag to make sure content is same width as device and not scalable -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <title>Family of Eaterires</title>
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy&display=swap" rel="stylesheet">
+
+    <!-- link to css files -->
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- link to js dependencies -->
+    <script src="js/vendor/jquery-3.3.1.min.js"></script>
+    <script src="js/vendor/gsap.min.js"></script>
+</head>
+
+<body>
+    <div class="mainbody">
+    <!-- MENU -->
+        <main class="hamburgerMenu" id="menu">
+            <div class="backtosplash" id="Hamburger_hearth">
+                <div class="hearth-content ">
+                    <p>Hearth & stone</p>
+                    <p>Fast Casual Dinning </p>
+                    <img src="img/4starrating2.svg" />
+                </div>
+            </div>
+            <div class="backtosplash" id="Hamburger_vines">
+                <div class="fivevines-content ">
+                    <p>5 Vines</p>
+                    <p>Casual Dining </p>
+                    <img src="img/4starrating.svg" />
+                </div>
+            </div>
+            <div class="backtosplash" id="Hamburger_crispy">
+                <div class="crispys-content ">
+                    <p>Crispys</p>
+                    <p>Fast Food dinning</p>
+                    <img src="img/4starrating.svg" />
+                </div>
+            </div>
+        </main>
+        <!-- SPLASH SCREEN -->
+        <main id="splash">
+            <div class="sideRect">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 375 667" style="enable-background:new 0 0 375 667;" xml:space="preserve">
+                        <style type="text/css">
+                            .st0{fill:#FF8000;}
+                        </style>
+                    <polygon class="st0" points="375,0 0,667 0,0 "/>
+                    </svg>
+
+            </div>
+            <div class="sideRect2"><svg id="Layer_2" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 751.76 1337.5">
+                    <defs>
+                        <style>
+                        </style>
+                    </defs>
+                    <title>sideRect2</title>
+                    <polygon class="cls-2" points="750 1337 521.5 1337.5 0 1337 376 669 750 0 751.76 1040.32 750 1337" />
+                </svg></div>
+
+            <img src="img/foe_logo.svg" alt="Family of Eateries" />
+
+        </main>
+        <!-- LANDING SCREEN -->
+        <main id="landing">
+
+            <div class="header">
+                <h1>R<span>estaurants</span></h1>
+            </div>
+            <div class="content reveal">
+                <div class="landingscreen hearth" id="logo1">
+                    <div class="hearth-rating">
+                        <img src="img/hearth_logo.svg" alt="HEARTH" />
+                        <div class="hearth-content ">
+                            <p>Hearth & stone</p>
+                            <p>Fast Casual Dinning </p>
+                            <img src="img/4starrating2.svg" />
+                        </div>
+                    </div>
+                </div>
+                <div class="landingscreen fivevines" id="logo2">
+                    <div class="fivevines-rating">
+                        <img src="img/5vine_logo.svg" alt="5 Vine" class="five_vines" />
+                        <div class="fivevines-content ">
+                            <p>5 Vines</p>
+                            <p>Casual Dining </p>
+                            <img src="img/4starrating.svg" />
+                        </div>
+                    </div>
+                </div>
+                <div class="landingscreen crispy" id="logo3">
+                    <div class="crispys-rating">
+                        <img src="img/crispy_logo.svg" alt="crispys" class="crispys" />
+                        <div class="crispys-content ">
+                            <p>Crispys</p>
+                            <p>Fast Food dinning</p>
+                            <img src="img/4starrating.svg" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <!-- RESTAURANT 1 -->
+        <main id="rest1">
+            <!-- header -->
+            <header>
+                <img class="hamburger" id="hamburger" src="img/close2hamburger.gif" alt="Menu" />
+                <h1>Hearth & stone</h1>
+            </header>
+            
+
+            <section class="home">
+                <div class="slidershow middle reveal">
+
+                    <div class="slides reveal">
+                        <input type="radio" name="r" id="r1" checked>
+                        <input type="radio" name="r" id="r2">
+                        <input type="radio" name="r" id="r3">
+                        <input type="radio" name="r" id="r4">
+                        <input type="radio" name="r" id="r5">
+                        <div class="slide s1">
+                            <img src="img/g1.jpg" alt="">
+                        </div>
+                        <div class="slide">
+                            <img src="img/g2.jpg" alt="">
+                        </div>
+                        <div class="slide">
+                            <img src="img/g3.jpg" alt="">
+                        </div>
+                        <div class="slide">
+                            <img src="img/g4.jpg" alt="">
+                        </div>
+                        <div class="slide">
+                            <img src="img/g5.jpg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="navigation  reveal">
+                        <label for="r1" class="bar" active></label>
+                        <label for="r2" class="bar"></label>
+                        <label for="r3" class="bar"></label>
+                        <label for="r4" class="bar"></label>
+                        <label for="r5" class="bar"></label>
+                    </div>
+                </div>
+
+
+                <div class="sectionContainer">
+
+
+                    <img class="logo reveal" src="img/hearth_logo.svg" alt="Ceviche" />
+                    <div class="bar reveal">FINE DINING</div>
+                    <div class="photoAddress reveal">
+                        <img class="homeImg" src="img/ceviche_home1.jpg" alt="Home" />
+                    </div>
+                    <div class="hours reveal">
+                        <h2>Exotic Flavor</h2>
+                        <p>Of your Choice</p>
+                    </div>
+                    <div class="reviews reveal">
+                        <div class="profile">
+                            <img src="img/ceviche_review.jpg" alt="Profile" />
+                            <img src="img/ceviche_review2.jpg" alt="Profile" />
+
+                        </div>
+                        <p> We are a symbol of warmth and welcome, We are a slmple pleasure, honest and genuine, We are a life story told
+                            over dinner, We are a long lunch With an old friend, We are your weekday morning ritual. We are the kindest
+                            gesture of neighbours, We are home, We are family.</p>
+                    </div>
+                </div>
+
+            </section>
+
+            <!-- specials -->
+            <section class="specials">
+                <div class="sectionBanner">NIGHTLY SPECIALS</div>
+                <div class="sectionContainer">
+                    <div class="nightContainer reveal">
+                        <img src="img/salad%20specials.jpg"  alt="Monday Special" />
+                        <div class="specials_text">
+                            <h2>Weekdays</h2>
+                            <p class="sub">OLDIES NIGHT</p>
+                            <p>ALl time Favourite</p>
+                            <ul>
+                                <li>FREE 1 FROSTER BEER</li>
+                                <li>FREE DESERTS</li>
+                                <li>LOW RATES</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="nightContainer reveal">
+                        <img src="img/special2.jpg" />
+                        <div class="specials_text">
+                            <h2>TUESDAY</h2>
+                            <p class="sub">GIRLS SPECIAL</p>
+                            <p>KAROAKE NIGHT</p>
+                            <ul>
+                                <li>FREE 2 DRINKS</li>
+                                <li>FREE DESERTS</li>
+                                <li>UNLIMITED FRIES</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="nightContainer reveal">
+                        <img src="img/saladspecial3.jpg" alt="Monday Special" />
+                        <div class="specials_text">
+                            <h2>FRIDAY</h2>
+                            <p class="sub">COUPLE NIGHT</p>
+                            <p>LIVE PIANO PLAY</p>
+                            <ul>
+                                <li>FREE 2 FROSTER BEER</li>
+                                <li>FREE DESERTS</li>
+                                <li>REASONABLE RATES</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- reservations -->
+            <section class="reservations">
+                <div class="sectionBanner">RESERVATIONS</div>
+                <div class="sectionContainer">
+                    <h2 class="reveal">Fill out the form below </h2>
+                    <p class="reveal">* Required</p>
+                    <form>
+                        <p class="reveal">
+                            <label for="name">Name <span>*</span></label>
+                            <input type="text" name="name" placeholder="first & last Name" />
+                        </p>
+                        <p class="reveal">
+                            <label for="phone">Phone <span>*</span></label>
+                            <input type=number name="phone" placeholder="(289) 228 8675" />
+                        </p>
+                        <p class="reveal">
+                            <label for="date">Date <span>*</span></label>
+                            <input type=date name="date" placeholder="(289) 228 8675" />
+                        </p>
+                        <p class="reveal">
+                            <label for="time">Time<span>*</span></label>
+                            <select name="time">
+                                <option>Select a time.... </option>
+                                <option value="6:00PM">6:00PM</option>
+                                <option value="6:30PM">6:30PM</option>
+                                <option value="7:00PM">7:00PM</option>
+                                <option value="7:30PM">7:30PM</option>
+                                <option value="8:00PM">8:00PM</option>
+                                <option value="8:30PM">8:30PM</option>
+                            </select>
+                        </p>
+                        <p class="reveal">
+                            <label for="guest">Guest<span>*</span></label>
+                            <select name="Guest">
+                                <option>Select the Number of Guest.... </option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7 or more</option>
+                            </select>
+                        </p>
+                        <p class="reveal">
+                            <label for="requests">Special Request </label>
+                            <textarea name="requests" rows=3></textarea>
+                        </p>
+                        <input class="reserve" type="submit" name="Sumbit" value="Submit" />
+                    </form>
+                </div>
+            </section>
+            <!-- footer -->
+            <footer>
+                <div class="homeIcon icons" data-section=".home">
+                    <img src="img/home_icon.svg" alt="Home" />
+                    <p>Home</p>
+                </div>
+                <div class="specialsIcon icons" data-section=".specials">
+                    <img src="img/specials_icon.svg" alt="Specials" />
+                    <p>Specials</p>
+                </div>
+                <div class="reservationsIcon icons" data-section=".reservations">
+                    <img src="img/reservations_icon.svg" alt="Reservations" />
+                    <p>Reservations</p>
+                </div>
+            </footer>
+        </main>
+        <!-- RESTAURANT 2 -->
+        <main id="rest2">
+            <!-- header -->
+            <header>
+                <img class="hamburger" id="hamburger" src="img/close2hamburger.gif" alt="Menu" />
+                <h1>5 Vines</h1>
+            </header>
+            <!-- home -->
+            <section class="home">
+                <div class="sectionContainer">
+
+
+                    <img class="logo reveal" src="img/5vine_logo.svg" alt="Ceviche" />
+                    <div class="bar reveal">CASUAL DINING</div>
+                    <div class="photoAddress reveal">
+                        <img class="homeImg" src="img/italian1.jpeg" alt="Home" />
+                    </div>
+                    <div class="hours reveal">
+                        <h2>Itailian DINING</h2>
+                        <p>All Time Favourite</p>
+                    </div>
+                    <div class="reviews reveal">
+                        <div class="profile">
+                            <img src="img/italian2.jpeg" alt="Profile" />
+                            <img src="img/italian3.jpeg" alt="Profile" />
+
+                        </div>
+                        <p> In Skwanski's case, many of those
+                            ingredients come courtesy of the restaurantS own Five Vines Farm, which inspires such seasonal dishes.
+                            Chef Skwanski travels regularly to Italy with members of his kitchen and front-of-house teams to meet with Italian
+                            artisanal cheese and cured meat producers, olive oil and balsamic vinegar producers, and internationally
+                            acclaimed winemakers.</p>
+                    </div>
+                </div>
+
+            </section>
+            <!-- specials -->
+            <section class="specials">
+                <div class="sectionBanner">NIGHTLY SPECIALS</div>
+                <div class="sectionContainer">
+                    <div class="nightContainer reveal">
+                        <img src="img/italianSPECIAL1.jpeg" alt="Monday Special" />
+                        <div class="specials_text">
+                            <h2>Weekdays</h2>
+                            <p class="sub">OLDIES NIGHT</p>
+                            <p>ALl time Favourite</p>
+                            <ul>
+                                <li>FREE 1 FROSTER BEER</li>
+                                <li>FREE DESERTS</li>
+                                <li>LOW RATES</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="nightContainer reveal">
+                        <img src="img/italianSPECIAL2.jpeg" />
+                        <div class="specials_text">
+                            <h2>TUESDAY</h2>
+                            <p class="sub">GIRLS SPECIAL</p>
+                            <p>KAROAKE NIGHT</p>
+                            <ul>
+                                <li>FREE 2 DRINKS</li>
+                                <li>FREE DESERTS</li>
+                                <li>UNLIMITED FRIES</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="nightContainer reveal">
+                        <img src="img/italianSPECIAL3.jpeg" alt="Monday Special" />
+                        <div class="specials_text">
+                            <h2>FRIDAY</h2>
+                            <p class="sub">COUPLE NIGHT</p>
+                            <p>LIVE PIANO PLAY</p>
+                            <ul>
+                                <li>FREE 2 FROSTER BEER</li>
+                                <li>FREE DESERTS</li>
+                                <li>REASONABLE RATES</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- reservations -->
+            <section class="reservations">
+                <div class="sectionBanner">RESERVATIONS</div>
+                <div class="sectionContainer">
+                    <h2 class="reveal">Fill out the form below </h2>
+                    <p class="reveal">* Required</p>
+                    <form>
+                        <p class="reveal">
+                            <label for="name">Name <span>*</span></label>
+                            <input type="text" name="name" placeholder="first & last Name" />
+                        </p>
+                        <p class="reveal">
+                            <label for="phone">Phone <span>*</span></label>
+                            <input type=number name="phone" placeholder="(289) 228 8675" />
+                        </p>
+                        <p class="reveal">
+                            <label for="date">Date <span>*</span></label>
+                            <input type=date name="date" placeholder="(289) 228 8675" />
+                        </p>
+                        <p class="reveal">
+                            <label for="time">Time<span>*</span></label>
+                            <select name="time">
+                                <option>Select a time.... </option>
+                                <option value="6:00PM">6:00PM</option>
+                                <option value="6:30PM">6:30PM</option>
+                                <option value="7:00PM">7:00PM</option>
+                                <option value="7:30PM">7:30PM</option>
+                                <option value="8:00PM">8:00PM</option>
+                                <option value="8:30PM">8:30PM</option>
+                            </select>
+                        </p>
+                        <p class="reveal">
+                            <label for="guest">Guest<span>*</span></label>
+                            <select name="Guest">
+                                <option>Select the Number of Guest.... </option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7 or more</option>
+                            </select>
+                        </p>
+                        <p class="reveal">
+                            <label for="requests">Special Request </label>
+                            <textarea name="requests" rows=3></textarea>
+                        </p>
+                        <input class="reserve" type="submit" name="Sumbit" value="Submit" />
+                    </form>
+                </div>
+            </section>
+            <!-- footer -->
+            <footer>
+                <div class="homeIcon" data-section=".home">
+                    <img src="img/home_icon.svg" alt="Home" />
+                    <p>Home</p>
+                </div>
+                <div class="specialsIcon" data-section=".specials">
+                    <img src="img/specials_icon.svg" alt="Specials" />
+                    <p>Specials</p>
+                </div>
+                <div class="reservationsIcon" data-section=".reservations">
+                    <img src="img/reservations_icon.svg" alt="Reservations" />
+                    <p>Reservations</p>
+                </div>
+            </footer>
+        </main>
+        <!-- RESTAURANT 3 -->
+        <main id="rest3">
+            <!-- header -->
+            <header>
+                <img class="hamburger" id="hamburger" src="img/close2hamburger.gif" alt="Menu" />
+                <h1>Crispy's</h1>
+            </header>
+            <!-- home -->
+            <section class="home">
+                <div class="sectionContainer">
+
+
+                    <img class="logo reveal" src="img/crispy_logo.svg" alt="Ceviche" />
+                    <div class="bar reveal">CASUAL DINING</div>
+                    <div class="photoAddress reveal">
+                        <img class="homeImg" src="img/fries1.jpg" alt="Home" />
+                    </div>
+                    <div class="hours reveal">
+                        <h2>FAST FOOD DINING </h2>
+                        <p>DELICIOUS MEALS</p>
+                    </div>
+                    <div class="reviews reveal">
+                        <div class="profile">
+                            <img src="img/fries2.jfif" alt="Profile" />
+                            <img src="img/fries2.jpg" alt="Profile" />
+
+                        </div>
+                        <p> We have a long history of proudly serving great tasting burgers and traditional diner fare. Much has changed
+                            over fifty years, however our recipe remains true and delicious as ever. Our grill masters charbroil each burger to
+                            perfection on an open-flame grill. Once your burger is in front of you, we let you choose from a selection of fresh
+                            toppings to create your perfect burger, Add a delicious side of Crispy's famous fries or our deep-fried pickles n'
+                            onion rings combo. Your meal, your way, fast.</p>
+                    </div>
+                </div>
+
+            </section>
+            <!-- specials -->
+            <section class="specials">
+                <div class="sectionBanner">FAV SPECIALS</div>
+                <div class="sectionContainer">
+                    <div class="nightContainer reveal">
+                        <img src="img/WINGSSPECIAL.jfif" alt="Monday Special" />
+                        <div class="specials_text">
+                            <h2>ALL DAY SPECIALS</h2>
+                            <p class="sub">WINGS SPECIAL</p>
+                            <p>COKE AND FRIES </p>
+                            <ul>
+                                <li>FREE DIPPING SAUCES </li>
+                                <li>FREE DESERTS</li>
+                                <li>LOW RATES</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="nightContainer reveal">
+                        <img src="img/WINGSPECIALS2.jfif" />
+                        <div class="specials_text">
+                            <h2>TUESDAY</h2>
+                            <p class="sub">WILD SPECIAL </p>
+                            <p>KAROAKE NIGHT</p>
+                            <ul>
+                                <li>DRINKS</li>
+                                <li>FREE DESERTS</li>
+                                <li>UNLIMITED FRIES</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="nightContainer reveal">
+                        <img src="img/WINGSPECIAL3.jpg" alt="Monday Special" />
+                        <div class="specials_text">
+                            <h2>FRIDAY</h2>
+                            <p class="sub">COUPLE NIGHT</p>
+                            <p>LIVE PIANO PLAY</p>
+                            <ul>
+                                <li>FREE 2 FROSTER BEER</li>
+                                <li>FREE DESERTS</li>
+                                <li>REASONABLE RATES</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section> <!-- reservations -->
+            <section class="reservations">
+                <div class="sectionBanner">RESERVATIONS</div>
+                <div class="sectionContainer">
+                    <h2 class="reveal">Fill out the form below </h2>
+                    <p class="reveal">* Required</p>
+                    <form>
+                        <p class="reveal">
+                            <label for="name">Name <span>*</span></label>
+                            <input type="text" name="name" placeholder="first & last Name" />
+                        </p>
+                        <p class="reveal">
+                            <label for="phone">Phone <span>*</span></label>
+                            <input type=number name="phone" placeholder="(289) 228 8675" />
+                        </p>
+                        <p class="reveal">
+                            <label for="date">Date <span>*</span></label>
+                            <input type=date name="date" placeholder="(289) 228 8675" />
+                        </p>
+                        <p class="reveal">
+                            <label for="time">Time<span>*</span></label>
+                            <select name="time">
+                                <option>Select a time.... </option>
+                                <option value="6:00PM">6:00PM</option>
+                                <option value="6:30PM">6:30PM</option>
+                                <option value="7:00PM">7:00PM</option>
+                                <option value="7:30PM">7:30PM</option>
+                                <option value="8:00PM">8:00PM</option>
+                                <option value="8:30PM">8:30PM</option>
+                            </select>
+                        </p>
+                        <p class="reveal">
+                            <label for="guest">Guest<span>*</span></label>
+                            <select name="Guest">
+                                <option>Select the Number of Guest.... </option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7 or more</option>
+                            </select>
+                        </p>
+                        <p class="reveal">
+                            <label for="requests">Special Request </label>
+                            <textarea name="requests" rows=3></textarea>
+                        </p>
+                        <input class="reserve" type="submit" name="Sumbit" value="Submit" />
+                    </form>
+                </div>
+            </section>
+            <!-- footer -->
+            <footer>
+                <div class="homeIcon" data-section=".home">
+                    <img src="img/home_icon.svg" alt="Home" />
+                    <p>Home</p>
+                </div>
+                <div class="specialsIcon" data-section=".specials">
+                    <img src="img/specials_icon.svg" alt="Specials" />
+                    <p>Specials</p>
+                </div>
+                <div class="reservationsIcon" data-section=".reservations">
+                    <img src="img/reservations_icon.svg" alt="Reservations" />
+                    <p>Reservations</p>
+                </div>
+            </footer>
+        </main>
+
+    </div>
+    
+
+
+    <script>
+        // hide all main elements above the selected index in the ()
+        // comment out when running animtion scripts
+        // 0=menu, 1=splash, 2=landing, 3=rest 1, 4=rest 2, 5=rest 3
+            // $("main:gt(5)").hide();
+
+        // hide all section elements (in the selected restaurant/main screen)
+        // above the selected index in the ()
+        // comment out when running animtion scripts
+        // 0=home, 1=specials, 2=reservations
+            // $("#rest1 section:gt(0)").hide();
+    </script>
+    <script src="js/main.js"></script>
+
+    <!-- link to main js file -->
+</body></html>

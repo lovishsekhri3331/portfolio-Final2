@@ -1,0 +1,511 @@
+/* CSS RESET */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    /* stops text selection */
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE/Edge */
+    user-select: none;
+}
+
+/* stop browser outline from displaying on button clicks */
+*:active {
+    outline: 0;
+}
+
+/* GENERAL STYLES */
+html, body {
+    /* stop page from scrolling */
+    height: 100%;
+    overflow: hidden;
+    font-family: "Arial", sans-serif;
+}
+
+div, main, section, img {
+    position: absolute;
+}
+
+main {
+    display: none;
+}
+
+#loading, #begin, main {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#loading {
+    width: 50px;
+    height: auto;
+}
+
+#btnContainer {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+#begin {
+    display: inline-block;
+    background-color: #0665d4;
+    color: #FFF;
+    border: solid 1px transparent;
+    border-radius: 20px;
+    padding: 10px 20px;
+    transition: all 0.5s;
+}
+
+#begin:hover {
+    cursor: pointer;
+    background-color: #FFF;
+    color: #000;
+    border: solid 1px #000;
+}
+
+main {
+    width: 960px;
+    height: 600px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+section {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+#next, #prev, #playPause  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    bottom: 20px;
+    color: #FFF;
+    border: solid 1px #FFF;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.2);
+    font-size: 20px;
+    font-weight: bold;
+    transition: background 0.5s;
+}
+
+#next {
+    right: 20px;
+    padding-left: 2px;
+}
+
+#prev {
+    left: 20px;
+}
+
+#next:hover, #prev:hover {
+    cursor: pointer;
+    color: #000;
+    background: rgba(255, 255, 255, 1);
+}
+
+/* class can be applied to anything you want a pointer hover on */
+.eleHover:hover {
+    cursor: pointer;
+}
+
+
+#playPause {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.play {
+    width: 12px;
+    height: 16px;
+    border-top: 8px solid transparent;
+    border-left: 12px solid #FFF;
+    border-bottom: 8px solid transparent;
+    margin-left: 2px;
+}
+
+#playPause:hover .play {
+    border-left-color: #000;
+}
+
+.pause {
+    width: 12px;
+    height: 16px;
+    border-right: 4px solid #FFF;
+    border-left: 4px solid #FFF;
+}
+
+#playPause:hover .pause {
+    border-right-color: #000;
+    border-left-color: #000;
+}
+
+
+/* SHARED SCREEN STYLES */
+/* for demo only */
+h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #FFF;
+}
+
+/* for demo only */
+
+#p1e1{
+    top:5%;
+    left:16%;
+    width:70%;
+    height: auto;
+    position: absolute;
+}
+#p1e2{
+    top:22%;
+    width:39%;
+    height: auto;
+    position: absolute;
+}
+#p1e3{
+    top:59%;
+    left:40%;
+    width:39%;
+    height: auto;
+    position: absolute;
+}
+#p1e4{
+    top:10%;
+    left:86%;
+    width:15%;
+    height: auto;
+    position: absolute;
+}
+
+/* SCREEN 1 STYLES */
+#screen1 {
+    background: url(../img/bg.jpg);
+}
+
+/* SCREEN 2 STYLES */
+#screen2 {
+    background: url(../img/bg.jpg);
+}
+
+/* for demo only */
+#p2e1 {
+    width:50%;
+    left:24%;
+    position: absolute;
+}
+#p2e1a {
+    width:32%;
+    top:15%;
+    left:35%;
+    position: absolute;
+}
+
+#p2e2 {
+    width:47%;
+    top: 36%;
+    left:51%;
+    position: absolute;
+   
+}
+
+#p2e3 {
+    width:46%;
+    left: 2%;
+    top:26%;
+    
+    
+
+}
+
+#ele4 {
+    bottom: 150px;
+    right: 200px;
+    color: #FFF;
+    text-align: center;
+    line-height: 100px;
+}
+
+/* ele4 hover */
+
+
+#ele4hover {
+    background: #FFF;
+    bottom: 250px;
+    right: 100px;
+    opacity: 0;
+    transition: all 0.5s ease-out;
+}
+
+/* SCREEN 3 STYLES */
+#screen3 {
+    background: url(../img/bg.jpg);
+}
+
+#p3e1{
+    width:50%;
+    left:24%;
+}
+#p3e1a {
+    width:25%;
+    top:15%;
+    left:35%;
+    position: absolute;
+}
+#p3e2{
+    width:1%;
+    top: 20%;
+    left:9%;
+}
+#p3e3{
+    width:40%;
+    left:50%;
+    top:30%;
+}
+#p3e4{
+    width:70%;
+    left:16%;
+    top:70%;
+}
+/* for demo only */
+#ele5 {
+    top: 50px;
+    left: 50px;
+}
+
+#ele6 {
+    top: 40px;
+    right: 60px;
+}
+
+#ele7 {
+    bottom: 100px;
+    left: 300px;
+    padding: 20px;
+    overflow: hidden;
+}
+
+#ele7instructions {
+    color: #FFF;
+    left: 300px;
+    bottom: 80px;
+    width: 100px;
+    text-align: center;
+}
+
+#ele7content {
+    color: #FFF;
+    opacity: 0;
+    width: 160px;
+    pointer-events: none;
+}
+
+#ele8 {
+    bottom: 150px;
+    right: 200px;
+    color: #FFF;
+    text-align: center;
+    line-height: 100px;
+}
+
+#ele8hover {
+    bottom: 250px;
+    right: -100px;
+}
+
+/* SCREEN 4 STYLES */
+#screen4 {
+    background: url(../img/bg.jpg);
+}
+#p4e1{
+    width:50%;
+    left:24%;
+}
+#p4e2{
+    width:30%;
+    left:5%;
+    top:20%;
+}
+#p4e3{
+    width:22%;
+    left:65%;
+    top:20%;
+    
+}
+#p4e4{
+    width:40%;
+    left:3%;
+    top:25%;
+
+}
+#p4e5{
+    width:40%;
+    left:55%;
+    top:35%;
+
+}
+
+
+
+/* for demo only */
+#ele9 {
+    top: 50px;
+    left: 50px;
+    width: 200px;
+    height: 200px;
+}
+
+#ele9 p {
+    text-align: center;
+    color: #FFF;
+    margin: 5px;
+}
+
+.bars {
+    float: left;
+    height: 5px;
+    width: 30px;
+    background: #FFF;
+    bottom: 0;
+}
+
+#bar1 {
+    left: 15px;
+}
+
+#bar2 {
+    left: 50px;
+}
+
+#bar3 {
+    left: 85px;
+}
+
+#bar4 {
+    left: 120px;
+}
+
+#bar5 {
+    left: 155px;
+}
+
+#ele10 {
+    top: 40px;
+    right: 60px;
+}
+
+#ele11 {
+    bottom: 100px;
+    left: 300px;
+}
+
+#ele12 {
+    bottom: 150px;
+    right: 200px;
+}
+
+/* SCREEN 5 STYLES */
+#screen5 {
+    background: url(../img/bg.jpg);
+}
+
+#p5e1{
+    width:50%;
+    left:24%;
+}
+#p5e1a{
+    width:32%;
+    top:15%;
+    left:34%;
+}
+#p5e2{
+    width:35%;
+    left:5%;
+    top:30%;
+}
+
+#p5e3{
+    width:35%;
+    left:55%;
+    top:30%;
+}
+
+
+/* for demo only */
+#ele13 {
+    top: 20%;
+    left: 20%;
+    color: #FFF;
+    text-align: center;
+    line-height: 100px;
+}
+
+#ele14 {
+    top: 20%;
+    right: 20%;
+    color: #FFF;
+    text-align: center;
+    line-height: 100px;
+}
+
+/* for modals... can be used anywhere */
+.overlay {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 2000;
+    display: none;
+}
+
+.close {
+    color: #FFF;
+    top: 10px;
+    right: 10px;
+}
+
+.overlayContent {
+    color: #FFF;
+    top: 0;
+    text-align: center;
+}
+
+/* SCREEN 6 STYLES */
+#screen6 {
+    background: url(../img/bg.jpg);
+}
+#p6e1{
+    width:50%;
+    left:24%;
+    
+}
+#p6e1a{
+    top:15%;
+    width:30%;
+    left:35%;
+    
+}
+#p6e2{
+    width:90%;
+    left:4%;
+    top:40%;
+    
+}
+
+
+/* for demo only */
+#ele15 {
+    top: 20%;
+    right: 20%;
+    color: #FFF;
+    text-align: center;
+    line-height: 100px;
+    transform: rotate(-45deg);
+}

@@ -33,7 +33,7 @@ $(document).ready(function(){
 $("nav .reveal, .home .reveal").each(function(i) {
 
     gsap.from(this, {
-        delay: 1.45 + i * 0.15,
+        delay: 4.45 + i * 0.15,
         opacity: 0,
         y: -10,
         duration: 0.7,
@@ -77,7 +77,7 @@ var navOffset = $("nav").innerHeight() + 10;
         // reveal the content AS you scroll
         $(".reveal-ele").each(function(){
             var botEle =$(this).offset().top + $(this).innerHeight()-30;
-            var botWin = contentPosTop + $(window).height() + 300;
+            var botWin = contentPosTop + $(window).height() + 100;
 
             
             
@@ -91,3 +91,10 @@ var navOffset = $("nav").innerHeight() + 10;
             }
         });
     });
+
+
+
+// animation for preloader
+setTimeout(() => {
+    $('.loader-bg').fadeToggle();
+}, 3000);

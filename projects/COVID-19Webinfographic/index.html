@@ -1,0 +1,119 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    
+    <title>Project 03 Framework</title>
+    
+    <!-- link to css file -->
+    <link rel="stylesheet" href="css/main.css">
+    
+    <!-- link to js dependancies -->
+    <script src="js/vendor/jquery-3.3.1.min.js"></script>
+    <script src="js/vendor/gsap.min.js"></script>
+</head>
+
+<body>
+    <!-- preloader -->
+    <img id="loading" src="img/loading_spinner.gif" alt="Loading..." />
+    
+    <!-- begin presentation button -->
+    <div id="btnContainer">
+        <div id="begin">STAY HOME AND LEARN...</div>
+    </div>
+    
+    <!-- main wrapper -->
+    <main>
+        
+        <!-- SCREEN 1 -->
+        <section id="screen1">
+            <div id="p1e1" class="ele"><img src="img/SVG/page1-h1.svg"/></div>
+            <div id="p1e2" class="ele"><img src="img/SVG/p1e20.svg"/></div>
+            <div id="p1e3" class="ele"><img src="img/SVG/P1E3.svg"/></div>
+            <div id="p1e4" class="ele"><img src="img/SVG/p1e4.svg"/></div>
+        </section>
+    
+        <!-- SCREEN 2 -->
+        <section id="screen2">
+            <div id="p2e1" class="ele"><img src="img/SVG/p2h1.svg"/></div>
+            <div id="p2e1a" class="ele"><img src="img/SVG/p2e1a.svg"/></div>
+            <div id="p2e2" class="ele"><img src="img/SVG/p2e20.svg"/></div>
+            <div id="p2e3" class="ele"><img src="img/SVG/p2e30.svg"/></div>
+        
+        </section>
+    
+        <!-- SCREEN 3 -->
+        <section id="screen3">
+            <div id="p3e1" class="ele"><img src="img/SVG/p2h1.svg"/></div>
+            <div id="p3e1a" class="ele"><img src="img/SVG/p3e1a.svg"/></div>
+            <div id="p3e2" class="ele"><img src="img/1x/Asset%201100.png"/></div>
+            <div id="p3e3" class="ele"><img src="img/SVG/p3map0.svg"/></div>
+            <div id="p3e4" class="ele"><img src="img/SVG/p3e4.svg"/></div>
+            
+                
+        </section>
+    
+        <!-- SCREEN 4 -->
+        <section id="screen4">
+            <div id="p4e1" class="ele"><img src="img/SVG/p2h1.svg"/></div>
+            <div id="p4e2" class="ele"><img src="img/SVG/p4e2.svg"/></div>
+            <div id="p4e3" class="ele"><img src="img/SVG/p4e3.svg"/></div>
+            <div id="p4e4" class="ele"><img src="img/SVG/p4e4.svg"/></div>
+            <div id="p4e5" class="ele"><img src="img/SVG/p4e5.svg"/></div>
+        </section>
+    
+        <!-- SCREEN 5 -->
+        <section id="screen5">
+            <div id="p5e1" class="ele"><img src="img/SVG/SVG/p5e1_1.svg"/></div>
+            <div id="p5e1a" class="ele"><img src="img/SVG/SVG/p5e1a.svg"/></div>
+            <div id="p5e2" class="ele"><img src="img/SVG/SVG/p5e2.svg"/></div>
+            <div id="p5e3" class="ele"><img src="img/SVG/SVG/p5e3.svg"/></div>
+        </section>
+        
+        <!-- SCREEN 5 MODALS -->
+        <div id="ele13content" class="overlay">
+            <div class="close eleHover">X</div>
+            <h1>CONTENT 1</h1>
+        </div>
+        <div id="ele14content" class="overlay">
+            <div class="close eleHover">X</div>
+            <h1>CONTENT 2</h1>
+        </div>
+    
+        <!-- SCREEN 6 -->   
+        <section id="screen6">
+            <div id="p6e1" class="ele"><img src="img/SVG/SVG/p5e1_1.svg"/></div>
+            <div id="p6e1a" class="ele"><img src="img/SVG/SVG/p6e1a.svg"/></div>
+            <div id="p6e2" class="ele"><a href="https://www.canada.ca/en/public-health/services/diseases/2019-novel-coronavirus-infection.html?&utm_campaign=gc-hc-sc-coronaviruspublicedu2021-2021-0001-9762248618&utm_medium=search&utm_source=google-ads-99837326356&utm_content=text-en-428935858540&utm_term=coronavirus%20canada"><img src="img/SVG/p6e2.svg"/></a></div>
+        </section>
+        
+        <!-- nav -->
+        <div id="prev">&#10094;</div>
+        <div id="next">&#10095;</div>
+        
+        <!-- background audio control -->
+        <div id="playPause"><div class="fas fa-microphone"></div></div>
+        
+        
+    </main>
+        
+    <!-- background audio set to loop -->
+    <audio id="background" src="audio/background.mp3" loop></audio>
+    
+    <!-- screen voiceover audio (only one is required as it will be updated on each screen) -->
+    
+    <audio id="voiceover" src=""></audio>
+    
+    
+    <!-- sound effects -->
+    <audio id="swoosh" src="audio/swoosh.mp3"></audio>
+    <audio id="pop" src="audio/pop.mp3"></audio>
+    
+    <!-- link to main js file -->
+    <script src="js/main.js"></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    
+</body>
+
+</html>

@@ -1,0 +1,143 @@
+.header {
+    background-color: rgb(180, 180, 180);
+}
+
+.logo {
+    background-color: rgb(220, 220, 220);
+    height: 3.0rem;
+}
+
+.search {
+    background-color: rgb(200, 200, 200);
+    height: 3.0rem;
+    text-align: right;
+}
+
+.movie_title {
+    background-color: rgb(100, 100, 100);
+    height: 3.0rem;
+    color: white;
+}
+
+
+.movie_poster {
+    background-color: rgb(50, 50, 50);
+    height: 10.0rem;
+    color: white;
+}
+
+.description {
+    background-color: rgb(220, 220, 220);
+}
+
+.description_detail {
+    background-color: rgb(200, 200, 200);
+    height: 8.0rem;
+}
+
+.trailer {
+    background-color: rgb(100, 100, 100);
+    height: 4.0rem;
+}
+
+
+.title {
+    background-color: rgb(150, 150, 150);
+    height: 2.0rem;
+}
+
+.cast {
+    background-color: rgb(50, 50, 50);
+    height: 12.0rem;
+    color: white;
+}
+
+.movie_image {
+    background-color: rgb(50, 50, 50);
+    height: 8.0rem;
+    color: white;
+}
+
+.related_movie {
+    background-color: rgb(50, 50, 50);
+    height: 14.0rem;
+    color: white;
+}
+
+.did_you_know {
+    background-color: rgb(200, 200, 200);
+}
+
+.social_icons {
+    background-color: rgb(200, 200, 200);
+    text-align: center;
+    height: 4.0rem;
+}
+
+
+
+
+
+
+
+
+.pink {
+    background-color: pink;
+}
+
+.paleblue {
+    background-color: paleturquoise;
+}
+
+.red {
+    background-color: red;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.header_background {
+    background-color: red;
+}
+
+
+.callout {
+    border: none;
+}
+
+.hideAll {
+    display: none;
+}
+
+.splash {
+    display: block;
+}
+
+.nav{
+    background-color: rgb(38, 38, 38);
+    height: 3.0rem;
+    color: white;
+    
+}
+#app {
+    background-color:rgb(99, 99, 99);    
+
+}
+.personName{
+    background-color: rgb(38, 38, 38);
+    height: 3.0rem;
+    color: white;
+
+}
+.personImage{
+    background-color: rgb(202, 202, 202);
+    height: 25.0rem;
+
+}
+.personDescription{
+    background-color: rgb(77, 77, 77);
+    height: 25.0rem;
+    color:white; 
+
+}
